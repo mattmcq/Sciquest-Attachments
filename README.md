@@ -7,8 +7,8 @@ with
 and override the getCxml method (line 151).
 
 The main parts for attachments are on lines 395-422 and 499-529.
-The first part specifies the attachments metadata (name, size, etc).
-The second part encodes each attachments as binary data with Mime boundary lines.
+- The first part specifies the attachments metadata (name, size, etc).
+- The second part encodes each attachments as binary data with Mime boundary lines.
 
 On line 547 we have getNotesToSendToVendor which only allows notes/attachments marked with 'sendToVendor' as the value in the noteTopicText.
 
