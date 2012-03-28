@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?><beans xmlns="http://www.springframework.org/schema/beans" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:p="http://www.springframework.org/schema/p" xmlns:dd="http://rice.kuali.org/dd" xsi:schemaLocation="http://www.springframework.org/schema/beans         http://www.springframework.org/schema/beans/spring-beans-2.0.xsd         http://rice.kuali.org/dd         http://rice.kuali.org/dd/dd.xsd">
+  	
+	<bean id="RequisitionDocument" parent="RequisitionDocument-parentBean">
+		<property name="documentClass" value="org.kuali.kfs.module.purap.document.RequisitionDocument" />
+    	<property name="promptBeforeValidationClass" value="edu.csu.kfs.module.purap.document.validation.impl.RequisitionPromptBeforeValidation "/>
+        <property name="attachmentTypesValuesFinderClass" value="edu.csu.kfs.module.purap.businessobject.options.RequisitionAttachmentTypeValuesFinder"/>
+    </bean>
+  	
+   
+</beans>
